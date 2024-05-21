@@ -1,0 +1,18 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  align-self: flex-start;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the form */
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}

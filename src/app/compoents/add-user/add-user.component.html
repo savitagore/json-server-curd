@@ -1,0 +1,22 @@
+<div class="button-container">
+  <button mat-raised-button color="primary" (click)="showList()">Show List</button>
+</div>
+
+<div class="form-container p-5">
+  <form [formGroup]="userForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="description">
+    </mat-form-field>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" type="button" *ngIf="userId!==0"  (click)="onSubmit()">Submit</button>
+      <button mat-raised-button color="primary" type="button"  *ngIf="userId==0"  (click)="onUpdate()">Update</button>
+    </div>
+  </form>
+</div>
